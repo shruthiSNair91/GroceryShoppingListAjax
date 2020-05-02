@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="proDisplay.css">
+    <title>GroceryShopping</title>
+</head>
+<body>
+    <span id="pTable" class="table-responsive" style="visibility:hidden" >
+        <table id="prodTable" > 
+            <tr>
+                <th scope="col">Sr.No.</th>
+                <th scope="col">NAME</th>
+                <th scope="col">QUANTITY</th>
+                <th scope="col">UNIT</th>
+                <th scope="col">DEPARTMENT</th>
+                <th scope="col">NOTES</th>
+            </tr>
+          </table>
+    </span> 
+    <div id="showList">
+        <h1>GROCERY SHOPPING LIST</h1>
+        <button id="btnShow" onclick="showlist();">Show List</button>
+    </div>
+
+    <script>
+        function showlist(){
+            document.getElementById("pTable").style.visibility="visible";
+    document.getElementById("showList").style.visibility="hidden";
+    $(document).ready(function()
+    {
+        $.getJSON("ProductList.json",function(datalist)
+        {
+            console.log(datalist);
+            var data=datalist.products;
+            var plist="";
+            $.each(data,function(key,value){
+                plist+="<tr>";
+                plist+="<td>"+value.Sno+"</td>";
+                plist+="<td>"+value.Name+"</td>";
+                plist+="<td>"+value.Quantity+"</td>";
+                plist+="<td>"+value.Unit+"</td>";
+                plist+="<td>"+value.Department+"</td>";
+                plist+="<td>"+value.Notes+"</td>";
+                plist+="</tr>";
+               
+         });
+     $("#prodTable").append(plist);
+    });
+});
+        }
+    
+    </script> 
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+{
+    "products":[
+                {
+                    "Sno":"01",
+                    "Name":"Amul Butter",
+                    "Quantity":"200",
+                    "Unit":"grams",
+                    "Department":"Dairy",
+                    "Notes":"Salted butter in block size requuired."
+                },
+                {
+                    "Sno":"02",
+                    "Name":"Rice",
+                    "Quantity":"5",
+                    "Unit":"kilogram",
+                    "Department":"Grains",
+                    "Notes":"Brown rice of single boiled type required."
+                },
+                {
+                    "Sno":"03",
+                    "Name":"Corn Flakes",
+                    "Quantity":"1",
+                    "Unit":"Kilogram",
+                    "Department":"Instant Food",
+                    "Notes":"Kellogs chocos names preffered."
+                },
+                {
+                    "Sno":"04",
+                    "Name":"olive Oil",
+                    "Quantity":"1",
+                    "Unit":"Litre",
+                    "Department":"Cooking",
+                    "Notes":"Of good brand required."
+                },
+                {
+                    "Sno":"05",
+                    "Name":"Green Peas",
+                    "Quantity":"500",
+                    "Unit":"grams",
+                    "Department":"Frozen",
+                    "Notes":"In small packets and organic type required."
+                },
+                {
+                    "Sno":"06",
+                    "Name":"Tomato Ketchup",
+                    "Quantity":"1",
+                    "Unit":"Kilogram",
+                    "Department":"Condiments",
+                    "Notes":"Made up of organic tomatoes with low sugar reuired."
+                },
+                {
+                    "Sno":"07",
+                    "Name":"Cream Biscuits",
+                    "Quantity":"2",
+                    "Unit":"200grams/pack",
+                    "Department":"Snacks",
+                    "Notes":"bourbon chocolate cream biscuits."
+                },
+                {
+                    "Sno":"08",
+                    "Name":"Urad Dal",
+                    "Quantity":"1",
+                    "Unit":"Kilogram",
+                    "Department":"Pulses",
+                    "Notes":"Without black covering all white is needed."
+                },
+                {
+                    "Sno":"09",
+                    "Name":"Badam",
+                    "Quantity":"200",
+                    "Unit":"grams",
+                    "Department":"nuts & Seeds",
+                    "Notes":"Cleaned and With high fibre."
+                },
+                {
+                    "Sno":"10",
+                    "Name":"Oats",
+                    "Quantity":"500",
+                    "Unit":"grams",
+                    "Department":"Instant Food",
+                    "Notes":"Fibre rich or masala type is also done."
+                },
+                {
+                    "Sno":"11",
+                    "Name":"Amul Icecream",
+                    "Quantity":"2",
+                    "Unit":"Kilogram",
+                    "Department":"Dairy",
+                    "Notes":"Different flavoured like, chocolate or butterscotch."
+                }
+    ]
+}
